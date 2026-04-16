@@ -1,22 +1,85 @@
-# 🚀 RYLIG Network Scanner
+# 🚀 RYLIG Network Ping Scanner
 
-A professional, high-speed, multi-threaded IP ping scanner written in Python with CIDR range support from file.
+A fast, efficient, multi-threaded IP ping scanner written in Python. Designed for simplicity, performance, and practical network analysis.
+
+---
 
 ## ✨ Features
 
-- **Multi-threaded:** Fast scanning with custom thread count
-- **CIDR Support from file:** Define multiple ranges in `range.txt`
-- **Real-time output:** Live terminal results
-- **Auto-save:** All active IPs saved to `active.txt`
-- **Cross-platform:** Works on Windows, Linux, macOS
+- **Multi-threaded Scanning** – Scan large IP ranges quickly with adjustable thread count  
+- **CIDR Range Support** – Easily scan full subnets (e.g., `/24`)  
+- **Real-time Results** – Live output directly in the terminal  
+- **Auto-Save** – Active IPs are automatically saved to `active.txt`  
+- **Simple & Clean Output** – Focused on usability and clarity  
 
-## 📋 Requirements
-
-- Python 3.6+
-- No external libraries required (uses only standard library)
+---
 
 ## 🛠 Installation
 
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/rylig/NETWORK-PING-SCANNER.git
 cd NETWORK-PING-SCANNER
+````
+
+### 2. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ⚙️ Usage
+
+### 1. Prepare Your IP Ranges
+
+Create a file (e.g., `range.txt`) and add your IP ranges.
+
+Each line should contain one CIDR range:
+
+```
+8.6.112.0/24
+8.6.144.0/24
+8.6.145.0/24
+```
+
+---
+
+### 2. Run the Scanner
+
+Run the script:
+
+```bash
+python scanner.py
+```
+
+You will be prompted to:
+
+* Enter the path to your range file (e.g., `range.txt`)
+* Enter the number of concurrent threads (how many IPs to scan at the same time)
+
+---
+
+### 3. View Results
+
+* Active IP addresses will be displayed in real time
+* All responsive IPs will be saved automatically in:
+
+```
+active.txt
+```
+
+---
+
+## 📌 Notes
+
+* Higher thread counts = faster scans, but more network load
+* Use responsibly and only on networks you own or have permission to scan
+* Works best on stable network connections
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is intended for educational and authorized network testing purposes only. Unauthorized scanning of networks may be illegal in your jurisdiction.
