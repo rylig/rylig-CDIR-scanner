@@ -16,7 +16,7 @@ A fast, efficient, multi-threaded IP ping scanner written in Python. Designed fo
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rylig/NETWORK-PING-SCANNER.git
+git clone https://github.com/rylig/rylig-CDIR-scanner.git
 cd NETWORK-PING-SCANNER
 ````
 
