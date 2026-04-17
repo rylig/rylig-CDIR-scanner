@@ -8,9 +8,7 @@ A fast, efficient, multi-threaded IP ping scanner written in Python. Designed fo
 
 - **Multi-threaded Scanning** – Scan large IP ranges quickly with adjustable thread count  
 - **CIDR Range Support** – Easily scan full subnets (e.g., `/24`)  
-- **Real-time Results** – Live output directly in the terminal  
 - **Auto-Save** – Active IPs are automatically saved to `active.txt`  
-- **Simple & Clean Output** – Focused on usability and clarity  
 
 ---
 
@@ -63,7 +61,6 @@ You will be prompted to:
 
 ### 3. View Results
 
-* Active IP addresses will be displayed in real time
 * All responsive IPs will be saved automatically in:
 
 ```
